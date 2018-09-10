@@ -16,7 +16,7 @@ public class Magic8Ball {
         usersInput = Integer.parseInt(String.valueOf(Questioning));
         
         //Printing out users Magic 8 Ball result
-        if(Questioning == 0){
+        if(Questioning <= 0){
             System.out.println("Too low of a number!")
         }
         else if(Questioning == 1-10){
