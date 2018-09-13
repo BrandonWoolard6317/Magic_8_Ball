@@ -13,19 +13,19 @@ public class Magic8Ball {
         //Grabbing users input
         System.out.println("Let's play Magic 8 Ball!\nPick a number between 1-100");
         usersInput = keyboard.nextLine();
-        usersInput = Integer.parseInt(String.valueOf(Questioning));
+        Questioning = Integer.parseInt(String.valueOf(usersInput));
         
         //Printing out users Magic 8 Ball result
         if(Questioning <= 0){
-            System.out.println("Too low of a number!")
+            System.out.println("Too low of a number!");
         }
-        else if(Questioning == 1-10){
+        else if(Questioning <= 10){
             System.out.println("You will be surrounded by loved ones your entire life.");
         }
-        else if(Questioning == 11-20){
+        else if(Questioning >= 11){
             System.out.println("You will always be alone.");
         }
-        else if(Questioning == 21-30){
+        else if(Questioning >= 21-30){
             System.out.println("You will have endless amounts of money.");
         }       
         else if(Questioning == 31-40){
@@ -49,8 +49,8 @@ public class Magic8Ball {
         else if(Questioning == 91-100){
             System.out.println("You are not awesome.");
         }
-        else if(Question > 100){
-            System.out.println("Too high of a number!")
+        else if(Questioning > 100){
+            System.out.println("Too high of a number!");
         }
     }
 }
