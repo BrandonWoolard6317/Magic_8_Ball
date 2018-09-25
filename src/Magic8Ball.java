@@ -7,12 +7,17 @@ public class Magic8Ball {
         String usersInput;
         int generatedNumber;
         int Questioning;
+        int usersNumber;
 
         //Initializing Variables
         Scanner keyboard = new Scanner(System.in);
         generatedNumber = (int) (Math.random() * 100);
 
-        //Grabbing users input
+        System.out.println("Lets play Magic 8 Ball! Select a number between 0-100");
+        usersInput = keyboard.nextLine();
+        usersAnswer = Integer.parseInt(String.valueof(usersInput));
+        
+        /*Loop 
         System.out.println("Let's play Magic 8 Ball!\nPress 1 to play\nPress 2 to exit");
         usersInput = keyboard.nextLine();
         Questioning = Integer.parseInt(String.valueOf(usersInput));
@@ -75,6 +80,6 @@ public class Magic8Ball {
             } else if(Questioning == 2){
                 System.exit(0);
             }
-        }
+        }*/
     }
 }
