@@ -14,71 +14,74 @@ public class Magic8Ball {
         generatedNumber = (int) (Math.random() * 100);
 
         
-        
-        System.out.println("Lets play Magic 8 Ball! Select a number between 0-100");
+        //Start of original Magic 8 Ball
+ /*       System.out.println("Lets play Magic 8 Ball! Select a number between 0-100");
         usersInput = keyboard.nextLine();
-        usersNumber = Integer.parseInt(String.valueof(usersInput));
+        usersNumber = Integer.parseInt(usersInput);
         
             if (usersNumber < 0) {
-                System.out.println("Too low of a number!");
+                System.out.println("\nToo low of a number!");
             } else if (usersNumber < 10) {
-                System.out.println("You will be surrounded by loved ones your entire life.");
+                System.out.println("\nYou will be surrounded by loved ones your entire life.");
             } else if (usersNumber < 20) {
-                System.out.println("You will always be alone.");
+                System.out.println("\nYou will always be alone.");
             } else if (usersNumber < 30) {
-                System.out.println("You will have endless amounts of money.");
+                System.out.println("\nYou will have endless amounts of money.");
             } else if (usersNumber < 40) {
-                System.out.println("You will never make it above medium class in wealth.");
+                System.out.println("\nYou will never make it above medium class in wealth.");
             } else if (usersNumber < 50) {
-                System.out.println("You will have bad luck for the rest of your life.");
+                System.out.println("\nYou will have bad luck for the rest of your life.");
             } else if (usersNumber < 60) {
-                System.out.println("You will have many great things coming soon.");
+                System.out.println("\nYou will have many great things coming soon.");
             } else if (usersNumber < 70) {
-                System.out.println("You will never be ill.");
+                System.out.println("\nYou will never be ill.");
             } else if (usersNumber < 80) {
-                System.out.println("You will have bad fortune for many years to come.");
+                System.out.println("\nYou will have bad fortune for many years to come.");
             } else if (usersNumber < 90) {
-                System.out.println("You will have great fortune.");
+                System.out.println("\nYou will have great fortune.");
             } else if (usersNumber <= 100) {
-                System.out.println("You are not awesome.");
+                System.out.println("\nYou are not awesome.");
             } else if (usersNumber >=101) {
-                System.out.println("Too high of a number!");
-            }
-        
+                System.out.println("\nToo high of a number!");
+            }*/
+            //End of original Magic 8 Ball
              
              
              
-        /*Loop 
+        //Start of loop for Magic 8 Ball
         System.out.println("Let's play Magic 8 Ball!\nPress 1 to play\nPress 2 to exit");
         usersInput = keyboard.nextLine();
         Questioning = Integer.parseInt(String.valueOf(usersInput));
 
-        if (Questioning == 1) {
-            //Printing out users Magic 8 Ball result
-            if (generatedNumber < 10) {
-                System.out.println("You will be surrounded by loved ones your entire life.");
-            } else if (generatedNumber < 20) {
-                System.out.println("You will always be alone.");
-            } else if (generatedNumber < 30) {
-                System.out.println("You will have endless amounts of money.");
-            } else if (generatedNumber < 40) {
-                System.out.println("You will never make it above medium class in wealth.");
-            } else if (generatedNumber < 50) {
-                System.out.println("You will have bad luck for the rest of your life.");
-            } else if (generatedNumber < 60) {
-                System.out.println("You will have many great things coming soon.");
-            } else if (generatedNumber < 70) {
-                System.out.println("You will never be ill.");
-            } else if (generatedNumber < 80) {
-                System.out.println("You will have bad fortune for many years to come.");
-            } else if (generatedNumber < 90) {
-                System.out.println("You will have great fortune.");
-            } else if (generatedNumber <= 100) {
-                System.out.println("You are not awesome.");
+            if(Questioning > 2 || Questioning <= 0) {
+                System.out.println("\nIncorrect input");
             }
-        }else if(Questioning == 2){
-            System.exit(0);
-        }
+            else if (Questioning == 1) {
+                    //Printing out users Magic 8 Ball result
+                    if (generatedNumber < 10) {
+                        System.out.println("\nYou will be surrounded by loved ones your entire life.");
+                    } else if (generatedNumber < 20) {
+                        System.out.println("\nYou will always be alone.");
+                    } else if (generatedNumber < 30) {
+                        System.out.println("\nYou will have endless amounts of money.");
+                    } else if (generatedNumber < 40) {
+                        System.out.println("\nYou will never make it above medium class in wealth.");
+                    } else if (generatedNumber < 50) {
+                        System.out.println("\nYou will have bad luck for the rest of your life.");
+                    } else if (generatedNumber < 60) {
+                        System.out.println("\nYou will have many great things coming soon.");
+                    } else if (generatedNumber < 70) {
+                        System.out.println("\nYou will never be ill.");
+                    } else if (generatedNumber < 80) {
+                        System.out.println("\nYou will have bad fortune for many years to come.");
+                    } else if (generatedNumber < 90) {
+                        System.out.println("\nYou will have great fortune.");
+                    } else if (generatedNumber <= 100) {
+                        System.out.println("\nYou are not awesome.");
+                    }
+            } else if (Questioning == 2) {
+                System.exit(0);
+            }
         //Loop to keep playing
         boolean Loop = true;
         while(Loop){
@@ -111,8 +114,8 @@ public class Magic8Ball {
             } else if(Questioning == 2){
                 System.exit(0);
             }
-        }*/
-             
+        }
+        //End of loop for Magic 8 Ball
              
     }
 }
