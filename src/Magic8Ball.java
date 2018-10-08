@@ -15,7 +15,7 @@ public class Magic8Ball {
 
         
         //Start of original Magic 8 Ball
- /*       System.out.println("Lets play Magic 8 Ball! Select a number between 0-100");
+        /*System.out.println("Lets play Magic 8 Ball! Select a number between 0-100");
         usersInput = keyboard.nextLine();
         usersNumber = Integer.parseInt(usersInput);
         
